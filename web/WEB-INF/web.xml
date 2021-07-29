@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>Credential</servlet-name>
+        <servlet-class>CredentialsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Credential</servlet-name>
+        <url-pattern>/credentials</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Books</servlet-name>
+        <servlet-class>BooksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Books</servlet-name>
+        <url-pattern>/books</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Search</servlet-name>
+        <servlet-class>SearchServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Search</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AccountCreation</servlet-name>
+        <servlet-class>AccountCreationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountCreation</servlet-name>
+        <url-pattern>/accCreate</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AccountDelete</servlet-name>
+        <servlet-class>DeleteAcountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AccountDelete</servlet-name>
+        <url-pattern>/accDelete</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <param-name>presentationServ</param-name>
+        <param-value>/presentation</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>getParamsServ</param-name>
+        <param-value>/getparams</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>commandClassName</param-name>
+        <param-value>FindCommand</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>resBundleServ</param-name>
+        <param-value>/resBundle</param-value>
+    </context-param>
+</web-app>

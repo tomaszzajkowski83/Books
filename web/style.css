@@ -1,0 +1,21 @@
+body {
+    background-color: darkolivegreen;
+    padding: 40px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: darkkhaki;
+}
+.logBtn {
+    font-weight: bold;
+}
+.right-side {
+    padding-left: 80px;
+    padding-right: 20px;
+    padding-bottom: 68px;
+}
